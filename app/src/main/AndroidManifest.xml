@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cuidatucarro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.autos.ImagenVehiculo"
+            android:label="@string/title_activity_imagen_vehiculo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".alert.AlerEmailEnviado"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".alert.VehiculoAgregado"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SplashScrennActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.OlvideContrasenaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LoginManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.RegistroManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MenuPrincipal"
+            android:label="@string/title_activity_menu_principal"
+            android:screenOrientation="portrait"
+            android:theme="@style/apptheme2" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

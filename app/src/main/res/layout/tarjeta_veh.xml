@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ventaGeneral"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/fui_transparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPatente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:hint="Patente de Vehículo"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMarcaModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Marca y Modelo vehículo"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/bgbotones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <Button
+                android:id="@+id/btnMantenimientos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/ic_mantenimiento_blanco"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:text="Ir a Mantenimientos"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white" />
+
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/ic_edit_blanco"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:text="Modificar"
+                android:textAlignment="textStart" />
+
+            <Button
+                android:id="@+id/btnDetele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@android:color/white"
+                android:drawableLeft="@drawable/ic_delete_blanco"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:text="Eliminar"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imaVeh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/fui_transparent"
+        android:src="@mipmap/ic_logo_cuida_tu_carro"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>

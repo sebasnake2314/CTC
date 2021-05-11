@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.cuidatucarro.ui.home.HomeFragment"
+        android:label="@string/title_principal"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_Mantenimientos"
+            app:destination="@id/Mantenimientos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_auto"
+        android:name="com.example.cuidatucarro.ui.autos.AutosFragment"
+        android:label="@string/title_autos"
+        tools:layout="@layout/fragment_auto" >
+        <action
+            android:id="@+id/action_navigation_auto_to_fragemtagregarauto"
+            app:destination="@id/fragemtagregarauto" />
+        <action
+            android:id="@+id/action_navigation_auto_to_mantenimiento"
+            app:destination="@id/Mantenimientos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.cuidatucarro.ui.Perfil.PerfilFragment"
+        android:label="@string/title_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.cuidatucarro.ui.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/fragemtagregarauto"
+        android:name="com.example.cuidatucarro.ui.autos.agregarauto"
+        android:label="@string/title_agregar_auto"
+        tools:layout="@layout/fragment_agregarauto" />
+    <fragment
+        android:id="@+id/Mantenimientos"
+        android:name="com.example.cuidatucarro.ui.mantenimiento.mantenimiento"
+        android:label="Mantenimientos"
+        tools:layout="@layout/fragment_mantenimiento" >
+        <action
+            android:id="@+id/action_Mantenimientos_to_agregarMantenimientoMotor"
+            app:destination="@id/agregarMantenimientoMotor" />
+    </fragment>
+    <fragment
+        android:id="@+id/agregarMantenimientoMotor"
+        android:name="com.example.cuidatucarro.ui.mantenimiento.agregarMantenimientoMotor"
+        android:label="Motor"
+        tools:layout="@layout/fragment_agregar_mantenimiento" />
+    <fragment
+        android:id="@+id/nuevoMantenimientoMotor"
+        android:name="com.example.cuidatucarro.ui.mantenimiento.nuevoMantenimientoMotor"
+        android:label="fragment_nuevo_mantenimiento_motor"
+        tools:layout="@layout/fragment_nuevo_mantenimiento_motor" />
+</navigation>

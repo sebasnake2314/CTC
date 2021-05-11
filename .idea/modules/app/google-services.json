@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "376852705510",
+    "firebase_url": "https://cuida-tu-carro-27538.firebaseio.com",
+    "project_id": "cuida-tu-carro-27538",
+    "storage_bucket": "cuida-tu-carro-27538.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376852705510:android:21080234d0f692d613cb27",
+        "android_client_info": {
+          "package_name": "com.example.cuidatucarro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376852705510-3g9jn7g1q94c0oirtu3e2k2qfnc0rq3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cuidatucarro",
+            "certificate_hash": "3400b657fe3de6f38b0b30ec9569c2b62c7f8f2d"
+          }
+        },
+        {
+          "client_id": "376852705510-6t1fmijpkm7snsr22mb4q70nc4bo64q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfe525A2PR74jOwLXLRArWs3G0MMFyBu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376852705510-6t1fmijpkm7snsr22mb4q70nc4bo64q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

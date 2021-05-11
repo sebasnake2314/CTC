@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bgperfil"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:visibility="invisible"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgPerfil2"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:background="@color/fui_transparent"
+                        app:civ_border_width="2dp"
+                        android:src="@mipmap/ic_logo_cuida_tu_carro"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtNombreUsuario"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        tools:text="Nombre Usuario"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:textAlignment="center">
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:paddingLeft="55dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_baseline_email_24"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/txtEmail"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        tools:text="Cuidatucarroapp@gmail.com"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="55dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_iduser"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/txtIdUsuario"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        tools:text="Cuidatucarroapp@gmail.com"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSalir"
+                    android:layout_marginTop="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerrar Sessión"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/stylebottons"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

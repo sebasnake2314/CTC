@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.autos.agregarauto"
+    android:orientation="vertical"
+    android:paddingTop="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/bgperfil">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBarAddAuto"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:visibility="invisible"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animacion"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:lottie_imageAssetsFolder="assets"
+                app:lottie_fileName="car.json"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnSelectPickture"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/fui_transparent"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/colorPrimary"
+                    android:src="@drawable/ic_photoauto"
+                    android:layout_gravity="center_horizontal">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <TextView
+                    android:id="@+id/textviewcambiofoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:hint="Presione para agregar foto"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Agregue los datos del vehículo."
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+/*---------------------------------------------------------------*/
+                <LinearLayout
+                    android:layout_width="389dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    /*--Fila Patente--*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/textViewPatente"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Patente: "
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtPatente"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:ems="10"
+                            android:inputType="textCapCharacters"
+                            android:layout_gravity="center_vertical"/>
+                    </LinearLayout>
+
+                    /*--Fila Marca*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/textViewMarca"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Marca: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtMarca"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    /*-Fila Modelo-*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/textViewModelo"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Modelo: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtModelo"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    /*--Fila Kilometraje*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/textViewKilometraje"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Kilometraje: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtKilo"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberSigned"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    /*--Fila Transmisión*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/textViewTransmisión"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:text="Transmisión: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtTransmision"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingTop="19dp"
+                            android:hint="Pulsa aqui para seleccionar"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+/*-------------------------------FIN--------------------------------*/
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddVeh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Agregar Vehículo"
+                android:background="@drawable/stylebottons"
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                android:layout_marginVertical="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

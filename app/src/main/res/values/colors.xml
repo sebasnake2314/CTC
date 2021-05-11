@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1844b5</color>
+    <color name="colorPrimaryDark">#272d58</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorSuccess">#28a745</color>
+    <color name="colorError">#dc3545</color>
+    <color name="colorgray">#f8f9fa</color>
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="color_tarjtea_bg">#E8EAF6</color>
+</resources>

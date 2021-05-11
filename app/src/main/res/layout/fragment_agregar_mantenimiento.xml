@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.mantenimiento.agregarMantenimientoMotor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/bgperfil">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBarAddAuto"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:visibility="invisible"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"/>
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/motor"
+                android:layout_marginHorizontal="150dp"
+                android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Motor"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                /*---------------------------------------------------------------*/
+                <LinearLayout
+                    android:layout_width="389dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    /*--Fila Tipo servicio--*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Servicio: "
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtTipoMantenimiento"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:focusable="false"/>
+
+                    </LinearLayout>
+
+
+                    /*--Fila Fecha--*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+
+                        <TextView
+                            android:id="@+id/textViewPatente"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Fecha: "
+                            android:textSize="18dp"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:id="@+id/txtFecha"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:ems="10"
+                            android:inputType="date"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:focusable="false"/>
+
+                    </LinearLayout>
+
+                    /*--Fila Kilometraje*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/textViewMarca"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Kilometraje: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtKilometraje"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="numberSigned"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    /*-Fila Tipo Aceite-*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/textViewModelo"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Tipo Aceite: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtTipoAceite"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    /*--Fila Marca Filtro*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:id="@+id/textViewKilometraje"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Marca Filtro: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtMarcaFiltro"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    /*--Fila Lugar de cambio*/
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Lugar de cambio: "
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtLugarCambio"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                /*-------------------------------FIN--------------------------------*/
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAddMant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Agregar Mantenimiento"
+                android:background="@drawable/stylebottons"
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                android:layout_marginVertical="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    </LinearLayout>
